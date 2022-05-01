@@ -7,6 +7,7 @@ module.exports = {
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require("vscode")
 const { createSerializer } = require('./serializer')
+const { createController } = require('./controller')
 
 // This method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -16,6 +17,7 @@ function activate(context) {
     vscode.workspace.registerNotebookSerializer(
       'nbort', createSerializer(), { transientOutputs: true }
     ),
+    createController(),
   )
 }
 

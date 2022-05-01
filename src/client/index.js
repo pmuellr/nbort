@@ -1,5 +1,5 @@
-import { render } from './render';
-import { ActivationFunction } from 'vscode-notebook-renderer';
+/** @typedef { import('vscode-notebook-renderer').ActivationFunction } ActivationFunction */
+import { render } from './render.js';
 
 // ----------------------------------------------------------------------------
 // This is the entrypoint to the notebook renderer's webview client-side code.
@@ -24,9 +24,9 @@ export function activate(context) {
       const node = document.createElement('div');
       root.appendChild(node);
 
-      render({ container: node, mime: outputItem.mime, value: outputItem.json(), context });
+      render({ container: node, mime: outputItem.mime, value: outputItem.text(), context });
     },
-    
+
     disposeOutputItem(outputId) {
       // Do any teardown here. outputId is the cell output being deleted, or
       // undefined if we're clearing all outputs.
