@@ -7,8 +7,9 @@ The format is based on [Keep a Changelog][], and this project adheres to
 
 ## [Unreleased] - 2022-04-30
 
-### Added
-- nbort/cell renderer via `yo code`
+### Changed
+- added nbort/cell renderer via `yo code`
+- de-typescript-ized, got serializer to work
 
 <!-- ===================================================================
 Added      - for new features.

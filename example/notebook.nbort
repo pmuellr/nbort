@@ -1,0 +1,17 @@
+[
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": "some `markdown`!"
+  },
+  {
+    "kind": 2,
+    "language": "javascript",
+    "value": "export function foo() {\n    return 'hello, world!'\n}"
+  },
+  {
+    "kind": 1,
+    "language": "markdown",
+    "value": ""
+  }
+]
